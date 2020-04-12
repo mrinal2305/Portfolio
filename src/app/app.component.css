@@ -1,0 +1,34 @@
+.home{
+    background-color:aqua;
+    height: 100%;
+}
+
+.education{
+    background-color: blue;
+    height: 50%;
+}
+
+.navbar{
+    background-color: burlywood;
+    height: 5%;
+}
+
+.skill{
+    background-color: darkcyan;
+    height: 50%;
+}
+
+.project{
+    background-color: darkgoldenrod;
+    height: 50%;
+}
+
+.experience{
+    background-color: darkorchid;
+    height: 50%;
+}
+
+.contact{
+    background-color: fuchsia;
+    height: 50%;
+}

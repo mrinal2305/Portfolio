@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  /* inherit border-box on all elements in the universe and before and after
+   */
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+
+body{
+  margin: 0px;
+  height: 100%;
+}
+
+p{
+  margin: 0px;
+  padding: 0px; 
+}
