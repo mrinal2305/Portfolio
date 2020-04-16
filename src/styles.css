@@ -14,11 +14,10 @@ html {
   }
 
 body{
-  margin: 0px;
+  margin: 0 auto;
   height: 100%;
 }
 
 p{
   margin: 0px;
-  padding: 0px; 
 }

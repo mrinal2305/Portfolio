@@ -5,30 +5,75 @@
 
 .education{
     background-color: blue;
-    height: 50%;
+    height: 100%;
 }
 
-.navbar{
+.animated{
     background-color: burlywood;
-    height: 5%;
+    height: 5%; 
 }
 
 .skill{
     background-color: darkcyan;
-    height: 50%;
+    height: 100%;
 }
 
 .project{
     background-color: darkgoldenrod;
-    height: 50%;
+    height: 100%;
 }
 
 .experience{
     background-color: darkorchid;
-    height: 50%;
+    height: 100%;
 }
 
 .contact{
     background-color: fuchsia;
-    height: 50%;
+    height: 100%;
+}
+
+.logo{
+    background-color: brown;
+    height: 5%;
+}
+
+.sticky {
+    background: burlywood;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+    position: fixed;
+    top: 0;
+    height: 5%;
+    width: 100%;
+    animation: moveDown 0.5s ease-in-out;
+}
+
+ul{
+    margin : 0 auto;
+    
+}
+
+li{
+    list-style: none;
+    flex : 0 0 8%;
+    padding-top: 4px;
+}
+
+a{
+   text-decoration: none;
+}
+
+a:hover{
+   background-color: red;
+   transition:all 0.3s ease-in-out;
+   text-decoration: none;
+}
+
+.active{
+    background-color: blue;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
 }
