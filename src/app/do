@@ -3,7 +3,8 @@ full-page div - html and body height : 100%
 active menu item on click - ng class directive
 sticky navbar - host listner
 on page scroll select anchor - host listner and view child
+Grid base layout design - css grid
 // follow this order
-3 particle js
-4 animate.js
-5 rest design (smart form)
+1 rest design
+2 use column grid if need to adjust
+3 animate.js

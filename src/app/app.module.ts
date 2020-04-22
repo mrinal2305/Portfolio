@@ -9,7 +9,7 @@ import { ProjectComponent } from './project/project.component';
 import { SkillComponent } from './skill/skill.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
@@ -20,7 +20,7 @@ import { ContactComponent } from './contact/contact.component';
     SkillComponent,
     EducationComponent,
     ExperienceComponent,
-    NavbarComponent,
+
     ContactComponent
   ],
   imports: [

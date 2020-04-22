@@ -1,16 +1,17 @@
 .home{
-    background-color:aqua;
+    
     height: 100%;
 }
 
 .education{
-    background-color: blue;
+    background-color : #f5f5f6;
     height: 100%;
 }
 
 .animated{
-    background-color: burlywood;
+    background-color: #6d6d6d;
     height: 5%; 
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .skill{
@@ -29,17 +30,17 @@
 }
 
 .contact{
-    background-color: fuchsia;
+    background-color: #424242;  
     height: 100%;
 }
 
 .logo{
-    background-color: brown;
-    height: 5%;
+    background-color: #1b1b1b;
+    height: 3%;
 }
 
 .sticky {
-    background: burlywood;
+    background: #6d6d6d;
     box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
     position: fixed;
     top: 0;
@@ -61,16 +62,20 @@ li{
 
 a{
    text-decoration: none;
+   color : white;
 }
 
 a:hover{
-   background-color: red;
+   color: black;
    transition:all 0.3s ease-in-out;
    text-decoration: none;
 }
 
 .active{
-    background-color: blue;
+   
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+    color: black;
 }
 
 .row{

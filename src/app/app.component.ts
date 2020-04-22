@@ -44,7 +44,6 @@ export class AppComponent implements AfterViewInit {
     this.skilloffset  = this.skillElement.nativeElement.offsetTop;
     this.projectoffset  = this.projectElement.nativeElement.offsetTop;
     this.experienceoffset  = this.experienceElement.nativeElement.offsetTop;
-    this.contactoffset  = this.contactElement.nativeElement.offsetTop;
    }
 
   @HostListener('window:scroll', ['$event'])
@@ -66,8 +65,7 @@ export class AppComponent implements AfterViewInit {
      else if(offset >= this.eduoffset && offset < this.skilloffset) this.currentActive = 1
      else if(offset >= this.skilloffset && offset < this.projectoffset) this.currentActive = 2
      else if(offset >= this.projectoffset && offset < this.experienceoffset) this.currentActive = 3
-     else if(offset >= this.experienceoffset && offset < this.contactoffset)  this.currentActive = 4
-     else  this.currentActive = 5;
+     else  this.currentActive = 4;
   }
 
   // @HostListener('window:scroll', ['$event'])
