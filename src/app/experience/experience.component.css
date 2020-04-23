@@ -20,6 +20,15 @@
 .child-1-2{
     grid-row: 3/4;
     border: 1px dotted black;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 26.6% 26.6% 26.6%;
+    grid-gap : 5%;
+    justify-content: center;
+}
+
+.child-1-2-1{
+    border : 1px dotted black;
 }
 
 .child-1-3{

@@ -5,6 +5,7 @@ sticky navbar - host listner
 on page scroll select anchor - host listner and view child
 Grid base layout design - css grid
 // follow this order
-1 rest design
+1 add content to each and finallize all except best css and js
 2 use column grid if need to adjust
+1 rest design
 3 animate.js
