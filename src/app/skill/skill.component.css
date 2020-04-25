@@ -10,6 +10,15 @@
     border: 1px dotted black;
 }
 
+.child-1 p{
+    color: #424242;
+    font-size: SSSem;
+    font-family: Raleway;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 3% 30% 50% 45%;
+}
+
 .child-2{
     grid-row: 3/4;
     border: 1px dotted black;
