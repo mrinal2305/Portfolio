@@ -1,17 +1,30 @@
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-rows: 13% 4% 14% 3% 14% 1% 14% 3% 14% 3% 14% 3%; 
+    grid-template-rows: 13% 4% 14% 3% 14% 1% 14% 3% 14% 3% 14% 3%;
     grid-template-columns: auto;
     height: 100%;
 }
 
- .child-1{
+.child-1 {
     grid-row: 1/2;
-    border: 1px dotted black;
 }
 
-.child-1 p{
-    color: #424242;
+#myProgress {
+    width: 100%;
+    background-color: grey;
+  }
+
+  #myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+  }
+
+.child-1 p {
+    color: #6d6d6d;
     font-size: SSSem;
     font-family: Raleway;
     font-size: 2.5em;
@@ -19,46 +32,60 @@
     margin: 3% 30% 50% 45%;
 }
 
-.child-2{
+.child-2 {
     grid-row: 3/4;
-    border: 1px dotted black;
+
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 2fr repeat(6,1fr);
+    grid-template-rows: 100%;
+    grid-template-columns: 25% repeat(6, 12.5%);
 }
 
-.child-child{
-    border: 1px dotted black;
+.child-2-1{
+    border : 1px dotted black;
+    padding : 4%
 }
 
-.child-3{
+.child-2-1 p {
+    font-family: OpenSans;
+    color: #424242;
+    font-size: 1.3em;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.child-3 {
     grid-row: 5/6;
-    border: 1px dotted black;
+
     display: grid;
-    grid-template-columns: 2fr repeat(6,1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% repeat(6, 12.5%);
 }
 
-.child-4{
+.child-4 {
     grid-row: 7/8;
-    border: 1px dotted black;
+
     display: grid;
-    grid-template-columns: 2fr repeat(6,1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% repeat(6, 12.5%);
 }
 
-.child-5{
+.child-5 {
     grid-row: 9/10;
-    border: 1px dotted black;
+
     display: grid;
-    grid-template-columns: 2fr repeat(6,1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% repeat(6, 12.5%);
 }
- 
-.child-6{
-    grid-row:   11/12;
+
+.child-6 {
+    grid-row: 11/12;
     display: grid;
-    border: 1px dotted black;
-    grid-template-columns: 2fr repeat(6,1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% repeat(6, 12.5%);
+}
+
+img {
+    height: 60%;
+    width: 50%;
+    margin: 10%;
 }

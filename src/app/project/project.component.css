@@ -1,35 +1,141 @@
-.grid-container{
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: auto;
     height: 100%;
     grid-template-rows: 15% 10% 25% 5% 25% 5% 25%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-.child-1{
+.child-1 {
     grid-row: 1/2;
+}
+
+.child-1 p {
+    color: #6d6d6d;
+    font-size: SSSem;
+    font-family: Raleway;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 3% 30% 50% 45%;
+}
+
+.child-2 {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 15.2%);
+    grid-gap: 4%;
+    justify-content: center;
+}
+
+.child-2-1 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.child-2-1 p {
+    font-family: Raleway;
+    font-size: 1.3em;
+    color: #424242;
+    margin-top: 24%;
+    margin-left: 32%;
+}
+
+.child-2-1 button {
+    border: 1px solid #6d6d6d;
+    background-color: transparent;
+    font-family: OpenSans;
+    height: 22%;
+    width: 62%;
+    margin: 0% 20%;
+    color : #6d6d6d;
+}
+
+.child-2-1 button:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    color : #424242;
+}
+
+.child-3 {
+    grid-row: 5/6;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 15.2%);
+    grid-gap: 4%;
+    justify-content: center;
+}
+
+img {
+    width: 90%;
+    height: 90%;
+    margin:5%
+}
+
+.else-container {
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-columns: auto 50% auto;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #0000004d;
+}
+
+.else{
+    border: 1px dotted black;
+    grid-column: 2/3;
+    display: grid;
+    grid-row: 2/3;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    border:2px solid red;
+    background-color: white;
+}
+
+.else-1{
+    grid-row:1/2;
+    grid-column: 1/2;
     border : 1px dotted black;
 }
 
-.child-2{
-    grid-row: 3/4;
-    border: 1px dotted black;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(5,15.2%);
-    grid-gap: 4%;
-    justify-content: center;
+.else-2{
+    grid-row : 1/2;
+    grid-column: 2/3;
+    border : 1px dotted black;
 }
 
-.child-2-1{
-    border: 1px dotted black;
+.else-3{
+    grid-row : 2/3;
+    grid-column: 1/3;
+    border : 1px dotted black;
 }
 
-.child-3{
-    grid-row: 5/6;
+.else-4{
+    grid-row : 3/4;
+    grid-column: 1/2;
+    border : 1px dotted black;
+}
+
+.else-5{
+    grid-row : 3/4;
+    grid-column: 2/3;
+    border : 1px dotted black;
+}
+
+.else-6{
+    grid-row: 4/5;
+    grid-column: 1/3;
     border: 1px dotted black;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(5,15.2%);
-    grid-gap: 4%;
-    justify-content: center;
 }

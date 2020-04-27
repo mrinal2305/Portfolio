@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
-
+  oshop = true;
+  popup = true;
   constructor() { }
-
   ngOnInit(): void {
   }
 

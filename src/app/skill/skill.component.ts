@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skill.component.css']
 })
 export class SkillComponent implements OnInit {
-
+  html = true;
   constructor() { }
 
   ngOnInit(): void {

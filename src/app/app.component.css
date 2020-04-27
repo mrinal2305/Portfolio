@@ -9,44 +9,42 @@
 }
 
 .animated{
-    background-color: #6d6d6d;
-    height: 5%; 
-    color: rgba(255, 255, 255, 0.87);
+    background-color: #e1e2e1d4;
+    margin-bottom: 1%;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.15);
+    height: 9%;
 }
 
 .skill{
-    background-color: white;
     height: 120%;
 }
 
 .project{
-    background-color: darkgoldenrod;
     height: 100%;
+  
 }
 
 .experience{
-    background-color: darkorchid;
     height: 100%;
+   
 }
 
-.contact{
-    background-color: #424242;  
-    height: 100%;
-}
 
 .logo{
-    background-color: #1b1b1b;
-    height: 3%;
+    background-color: #424242;
+    height: 4%;
 }
 
 .sticky {
-    background: #6d6d6d;
     box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
     position: fixed;
     top: 0;
-    height: 5%;
     width: 100%;
     animation: moveDown 0.5s ease-in-out;
+    background-color: #e1e2e1d4;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.15);
+    height: 9%;
+    z-index: 3;
 }
 
 ul{
@@ -59,11 +57,14 @@ li{
     flex : 0 0 8%;
     padding-top: 4px;
     font-family: OpenSans;
+    margin-top: 1%;
 }
 
 a{
    text-decoration: none;
-   color : white;
+   color : #7f7f77;
+   font-family: OpenSans;
+   font-size: 1m;
 }
 
 a:hover{

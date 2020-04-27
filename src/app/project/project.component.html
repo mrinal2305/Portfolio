@@ -1,19 +1,55 @@
+<div class="container">
 <div class="grid-container">
     <div class="child-1">
         <p>Project</p>
     </div>
     <div class="child-2">
-        <div class="child-2-1">Hack_2020</div>
-        <div class="child-2-1">Express</div>
-        <div class="child-2-1">Oshop</div>
-        <div class="child-2-1">ReadIt</div>
-        <div class="child-2-1">Tic-Tac-Toe</div>
+        <div class="child-2-1">
+            <img src="./../../assets/project/library.jpg">
+        </div>
+        <div class="child-2-1">
+            <img src="./../../assets/project/express.PNG">
+        </div>
+        <div class="child-2-1" (mouseover)="oshop = false" (mouseout) = "oshop = true">
+            <img  *ngIf="oshop else data" src="./../../assets/project/oshop.jpg">
+            <ng-template #data>
+                    <p>Oshop</p>
+                    <button (click)="popup = true">View More</button>
+            </ng-template>
+        </div>
+        <div class="child-2-1">
+            <img src="./../../assets/project/Capture.PNG">
+        </div>
+        <div class="child-2-1">
+            <img src="./../../assets/project/ticTacToe.jpg">
+        </div>
     </div>
     <div class="child-3">
-        <div class="child-2-1">Shopping List</div>
-        <div class="child-2-1">Clone</div>
-        <div class="child-2-1">Logo</div>
-        <div class="child-2-1"></div>
-        <div class="child-2-1"></div>
+        <div class="child-2-1">
+            <img src="./../../assets/project/shoppingList.jpg">
+        </div>
+        <div class="child-2-1">
+            <img src="./../../assets/project/unacedemy.jpg">
+        </div>
+        <div class="child-2-1">
+            <img src="./../../assets/project/log.jpg">
+        </div>
+        <div class="child-2-1">
+            <p>Oshop</p>
+            <button>View More</button>
+        </div>
+        <div></div>
     </div>
 </div>
+<div *ngIf="popup" class="else-container">
+    <div class="else">
+        <div class="else-1"></div>
+        <div class="else-2">Cross
+        </div>
+        <div class="else-3">image</div>
+        <div class="else-4">Oshop</div>
+        <div class="else-5">date</div>
+        <div class="else-6">detail</div>
+    </div>
+</div>
+</div>  
