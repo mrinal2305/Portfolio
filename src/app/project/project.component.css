@@ -39,7 +39,11 @@
 }
 
 .child-2-1 {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.child-2-1:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .child-2-1 p {
@@ -51,7 +55,7 @@
 }
 
 .child-2-1 button {
-    border: 1px solid #6d6d6d;
+    border: 1px solid #e1e2e1;
     background-color: transparent;
     font-family: OpenSans;
     height: 22%;
@@ -77,13 +81,13 @@
 img {
     width: 90%;
     height: 90%;
-    margin:5%
+    margin:5% 5%
 }
 
 .else-container {
     display: grid;
-    grid-template-rows: 15% 70% 15%;
-    grid-template-columns: auto 50% auto;
+    grid-template-rows:  5% 90% 5%;
+    grid-template-columns: 30% 40% 30%;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -94,48 +98,87 @@ img {
 }
 
 .else{
-    border: 1px dotted black;
     grid-column: 2/3;
     display: grid;
     grid-row: 2/3;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
-    border:2px solid red;
+    grid-template-columns: 84% auto;
+    grid-template-rows: 5% 62% 5% 6% 16% 6%;
     background-color: white;
 }
 
 .else-1{
     grid-row:1/2;
     grid-column: 1/2;
-    border : 1px dotted black;
 }
 
 .else-2{
     grid-row : 1/2;
     grid-column: 2/3;
-    border : 1px dotted black;
+    height: 90%;
+    padding: 1%;
+}
+
+.else-2:hover{
+    background-color: #e1e2e1;
 }
 
 .else-3{
     grid-row : 2/3;
     grid-column: 1/3;
-    border : 1px dotted black;
+    background-color: #e1e2e1;
 }
 
 .else-4{
-    grid-row : 3/4;
+    grid-row: 3/4;
     grid-column: 1/2;
-    border : 1px dotted black;
+    font-family: Raleway;
+    color: #424242;
+    font-size: 1.3em;
+    padding-left: 6%;
+    padding-top: 2%;
 }
 
 .else-5{
     grid-row : 3/4;
     grid-column: 2/3;
-    border : 1px dotted black;
+    font-family: OpenSans;
+    font-size: 0.8em;
+    color: #6d6d6d;
+    padding-top: 15%;
+    width: 70%;
 }
 
 .else-6{
     grid-row: 4/5;
     grid-column: 1/3;
-    border: 1px dotted black;
+    font-family: OpenSans;
+    color: #424242;
+    padding-left: 5%;
+    font-size: 0.9em;
+    padding-top: 2%;
+}
+
+.else-7{
+    grid-row: 5/6;
+    grid-column: 1/3;
+    color: #424242;
+    font-family: OpenSans;
+    padding-left: 6%;
+    padding-top:4%;
+}
+
+.else-8{
+    grid-row: 6/7;
+    grid-column: 1/3;
+}
+
+a{
+    color: #0000ffdb;
+    font-family: OpenSans;
+    padding-left: 6%;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }

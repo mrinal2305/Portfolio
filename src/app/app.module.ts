@@ -40,6 +40,7 @@ import { ContactComponent } from './contact/contact.component';
       animationDuration: 1000,
       titleFontSize: "20",
       subtitleFontSize: "13",
+      subtitle : "hello",
       showUnits: false,
       showBackground: false,
       clockwise: false,

@@ -4,13 +4,11 @@ active menu item on click - ng class directive
 sticky navbar - host listner
 on page scroll select anchor - host listner and view child
 Grid base layout design - css grid
-overlay                 - css
+overlay                 - css and z-index
+circular progress bar   - npm package
 // follow this order
-add js
-3 animate.js
-
-skill on hover show name and value
-project on click show more
-traning add more info and box shadow
-add js
-complete css and js
+add skill value
+animation
+mediaquery
+optimize - lazy load,image to firebase ,less resource
+deploy

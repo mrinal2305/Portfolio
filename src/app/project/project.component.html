@@ -1,55 +1,84 @@
-<div class="container">
+ <div class="container">
 <div class="grid-container">
     <div class="child-1">
         <p>Project</p>
     </div>
     <div class="child-2">
-        <div class="child-2-1">
-            <img src="./../../assets/project/library.jpg">
+        <div class="child-2-1" (mouseover)="lib = false" (mouseout) = "lib = true">
+            <img  *ngIf="lib else datalib" src="./../../assets/project/library.jpg">
+            <ng-template #datalib>
+                <p>e-Library</p>
+                <button (click)="popupFn($event)" id="1">View More</button>
+        </ng-template>
         </div>
-        <div class="child-2-1">
-            <img src="./../../assets/project/express.PNG">
+        <div class="child-2-1"  (mouseover)="express = false" (mouseout) = "express = true">
+            <img *ngIf="express else dataexp" src="./../../assets/project/express.PNG">
+            <ng-template #dataexp>
+                <p>Expess</p>
+                <button (click)="popupFn($event)" id="2">View More</button>
+        </ng-template>
         </div>
         <div class="child-2-1" (mouseover)="oshop = false" (mouseout) = "oshop = true">
             <img  *ngIf="oshop else data" src="./../../assets/project/oshop.jpg">
             <ng-template #data>
                     <p>Oshop</p>
-                    <button (click)="popup = true">View More</button>
+                    <button (click)="popupFn($event)" id="3">View More</button>
             </ng-template>
         </div>
-        <div class="child-2-1">
-            <img src="./../../assets/project/Capture.PNG">
+        <div class="child-2-1" (mouseover)="readit = false" (mouseout) = "readit = true">
+            <img *ngIf="readit else dataread" src="./../../assets/project/Capture.PNG">
+            <ng-template #dataread>
+                <p>ReadIt</p>
+                <button (click)="popupFn($event)" id="4">View More</button>
+        </ng-template>
         </div>
-        <div class="child-2-1">
-            <img src="./../../assets/project/ticTacToe.jpg">
+        <div class="child-2-1" (mouseover)="tictac = false" (mouseout) = "tictac = true">
+            <img *ngIf="tictac else datatic" src="./../../assets/project/ticTacToe.jpg">
+            <ng-template #datatic>
+                <p>Tic Tac Toe</p>
+                <button (click)="popupFn($event)" id="5">View More</button>
+        </ng-template>
         </div>
     </div>
     <div class="child-3">
-        <div class="child-2-1">
-            <img src="./../../assets/project/shoppingList.jpg">
+        <div class="child-2-1" (mouseover)="list = false" (mouseout) = "list = true">
+            <img *ngIf="list else datalist" src="./../../assets/project/shoppingList.jpg">
+            <ng-template #datalist>
+                <p>List</p>
+                <button (click)="popupFn($event)" id="6">View More</button>
+        </ng-template>
         </div>
-        <div class="child-2-1">
-            <img src="./../../assets/project/unacedemy.jpg">
+        <div class="child-2-1" (mouseover)="clone = false" (mouseout) = "clone = true">
+            <img *ngIf="clone else dataclone" src="./../../assets/project/unacedemy.jpg">
+            <ng-template #dataclone>
+                <p>Clone</p>
+                <button (click)="popupFn($event)" id="7">View More</button>
+        </ng-template>
         </div>
-        <div class="child-2-1">
-            <img src="./../../assets/project/log.jpg">
+        <div class="child-2-1" (mouseover)="logo = false" (mouseout) = "logo = true">
+            <img *ngIf="logo else datalogo" src="./../../assets/project/log.jpg">
+            <ng-template #datalogo>
+                <p>Logo</p>
+                <button (click)="popupFn($event)" id="8">View More</button>
+        </ng-template>
         </div>
-        <div class="child-2-1">
-            <p>Oshop</p>
-            <button>View More</button>
-        </div>
+    
         <div></div>
     </div>
 </div>
-<div *ngIf="popup" class="else-container">
+ <div  *ngIf="popup === true" class="else-container">
     <div class="else">
+     
         <div class="else-1"></div>
-        <div class="else-2">Cross
+        <div class="else-2" (click)="popup = false"><img src="../../assets/svg/times-solid.svg">
         </div>
-        <div class="else-3">image</div>
-        <div class="else-4">Oshop</div>
-        <div class="else-5">date</div>
-        <div class="else-6">detail</div>
+        <div class="else-3">  <img style="margin: 2% 5%;" *ngIf="oshop else data" src="{{info.image}}"></div>
+        <div class="else-4">{{info.title}}</div>
+        <div class="else-5">{{info.date}}</div>
+        <div class="else-6"><span style="color: #6d6d6d;">Tech - </span>{{info.tech}}</div>
+        <div class="else-7">{{info.detail}}.</div>
+        <div class="else-8"><a href="{{info.github}}" target="_blank"> Github <span><a href="{{info.website}}" target="_blank">Website</a></span></a></div>
+        
     </div>
 </div>
-</div>  
+</div>

@@ -2,8 +2,8 @@
     <div class="child-1">
         <div class="child-1-1"><p>Traning</p></div>
         <div class="child-1-2">
-            <div class="child-1-2-1">
-                <div class="child-1-2-1-1">
+            <div class="child-1-2-1" (mouseover)="overmongo()" (mouseout)="outmongo()" [ngStyle]="mongo?high:low">
+                <div class="child-1-2-1-1" >
                     <img src="./../../assets/certi/university-mongodb-com-1024x768desktop-b4b4cf.jpg"> 
                 </div>
                 <div class="child-1-2-1-2">
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="child-1-2-1">
+            <div class="child-1-2-1" (mouseover)="overintern()"  (mouseout)="outintern()" [ngStyle]="intern?high:low" id="2">
                 <div class="child-1-2-1-1">
                     <img src="./../../assets/certi/Bertelsmen.jpg">                
                 </div>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             
-            <div class="child-1-2-1">
+            <div class="child-1-2-1" (mouseover)="overmarket()" (mouseout)="outmarket()" [ngStyle]="market?high:low" id="3">
                 <div class="child-1-2-1-1">
                     <img src="./../../assets/certi/download.png">
                 </div>

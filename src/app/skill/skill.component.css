@@ -41,8 +41,8 @@
 }
 
 .child-2-1{
-    border : 1px dotted black;
-    padding : 4%
+    font-family: OpenSans;
+    padding : 4%;
 }
 
 .child-2-1 p {
@@ -85,7 +85,12 @@
 }
 
 img {
-    height: 60%;
-    width: 50%;
-    margin: 10%;
+    height: 100%;
+    width: 100%;
+    
 }
+
+.img{
+    height: 60%;width: 50%;margin: 5%;
+}
+

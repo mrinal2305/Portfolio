@@ -7,17 +7,29 @@
             <p> Programming Language</p>
         </div>
         <div class="child-2-1">
-            <img src="./../../assets/skills/c.png">
+            <div (mouseover)="c=false" (mouseout)="c=true" class="img">
+                <img *ngIf="c else data" src="./../../assets/skills/c.png" style="margin: 25%; margin-left: 1%;">
+                <ng-template #data>
+                    <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'C++'" [animationDuration]="300" [subtitle]="'60%'">
+                    </circle-progress>
+                </ng-template>
+            </div>
         </div>
         <div class="child-2-1">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png">
+            <div (mouseover)="js = false" (mouseout)="js = true" class="img">
+                <img  *ngIf="js else datajs"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" style="margin: 25%;margin-left: 1%;">
+                <ng-template #datajs>
+                    <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'JS'" [animationDuration]="300" [subtitle]="'60%'">
+                    </circle-progress>
+                </ng-template>
+            </div>
         </div>
         <div class="child-2-1">
         </div>
         <div style="font-family: OpenSans;" class="child-2-1">
-            <circle-progress [percent]="60" [radius]="42" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-              [animation]="true"  [title]="'HTML'"
-                [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
         </div>
         <div class="child-2-1"></div>
         <div class="child-2-1"></div>
@@ -27,28 +39,90 @@
             <p>Devlopment</p>
         </div>
         <div class="child-2-1">
-            <img src="https://img.icons8.com/color/240/000000/html-5.png" />
+            <div class="img" (mouseover)="html = false" (mouseout)="html = true" >
+            <img  *ngIf="html else datahtml" src="https://img.icons8.com/color/240/000000/html-5.png" />
+            <ng-template #datahtml>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'HTML'"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+        </div>       
         </div>
-        <div class="child-2-1"><img src="https://img.icons8.com/color/240/000000/css3.png" /> </div>
-        <div class="child-2-1"><img style="width: 55%;
+        <div class="child-2-1">
+            <div class="img" (mouseover)="css = false" (mouseout)="css = true">
+            <img  *ngIf="css else datacss" src="https://img.icons8.com/color/240/000000/css3.png" /> 
+            <ng-template #datacss>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'CSS'"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+        </div>
+        </div>
+        <div class="child-2-1">
+            <div class="img" (mouseover)="react = false" (mouseout)="react = true" style="height: 70%;width: 60%;margin-left: 15%;">
+            <img  *ngIf="react else datareact"  style="width: 55%;
             height: 105%;
             margin: 9%;
             margin: 6% 20%;" style="height:80%;width:70%" src="https://img.icons8.com/officel/160/000000/react.png">
+            <ng-template #datareact>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'React'"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
         </div>
-        <div class="child-2-1"><img src="https://img.icons8.com/color/240/000000/angularjs.png"></div>
-        <div class="child-2-1"><img src="https://hackr.io/tutorials/electron/logo-electron.svg?ver=1551354757"></div>
-        <div class="child-2-1"> <img src="https://img.icons8.com/color/480/nodejs.png">
+        </div>
+        <div class="child-2-1">
+            <div class="img" (mouseout)="angular = true"(mouseover)="angular = false" >
+            <img   *ngIf="angular else dataangular" src="https://img.icons8.com/color/240/000000/angularjs.png">
+            <ng-template #dataangular>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'Angular'" [titleFontSize]="17"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template></div>
+        </div>
+        <div class="child-2-1">
+            <div class="img"  (mouseover)="electron = false" (mouseout)="electron = true" >
+            <img *ngIf="electron else dataelectron" src="https://hackr.io/tutorials/electron/logo-electron.svg?ver=1551354757">
+        
+            <ng-template #dataelectron>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'Electron'" [titleFontSize]="17"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template></div>
+        </div>
+        <div class="child-2-1"> 
+            <div class="img" (mouseover)="node = false" (mouseout)="node = true">
+            <img   *ngIf="node else datanode" src="https://img.icons8.com/color/480/nodejs.png">
+            <ng-template #datanode>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'Node'"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+        </div>
         </div>
     </div>
     <div class="child-4">
         <div>
         </div>
-        <div class="child-2-1"><img src="https://cdn.iconscout.com/icon/free/png-512/jquery-10-1175155.png">
-        </div>
         <div class="child-2-1">
-            <img
-                src="https://3.bp.blogspot.com/-wNBgAfRVsag/XJPxeL-NY3I/AAAAAAAAJRM/NfJn04otlzM0gyUhV8sj_w_ak0wuZQPpACK4BGAYYCw/s1600/logo%2Bbootstrap%2Bicon.png">
-        </div>
+            <div class="img"(mouseover)="jquery = false" (mouseout)="jquery = true" >
+            <img  *ngIf="jquery else datajq" src="https://cdn.iconscout.com/icon/free/png-512/jquery-10-1175155.png">
+            <ng-template #datajq>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'Jquery'"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+        </div></div>
+        <div class="child-2-1">
+            <div class="img"(mouseover)="bootstrap = false" (mouseout)="bootstrap = true" style="height: 50%;width: 38%;margin-left: 12%;">
+            <img 
+              *ngIf="bootstrap else databoot" src="https://3.bp.blogspot.com/-wNBgAfRVsag/XJPxeL-NY3I/AAAAAAAAJRM/NfJn04otlzM0gyUhV8sj_w_ak0wuZQPpACK4BGAYYCw/s1600/logo%2Bbootstrap%2Bicon.png">
+            <ng-template #databoot>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'Bootstrap'" [titleFontSize]="15"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+        </div></div>
         <div class="child-2-1"></div>
         <div class="child-2-1"></div>
         <div class="child-2-1"></div>
@@ -59,14 +133,33 @@
             <p>Databases</p>
         </div>
         <div class="child-2-1">
-            <img src="https://img.icons8.com/color/480/mongodb.png">
-
+            <div class="img"(mouseover)="mongo = false" (mouseout)="mongo = true">
+            <img   *ngIf="mongo else datamongo" src="https://img.icons8.com/color/480/mongodb.png">
+            <ng-template #datamongo>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'MongoDB'"  [titleFontSize]="15"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+</div>
         </div>
-        <div class="child-2-1"> <img src="https://www.freeiconspng.com/uploads/sql-database-icon-png-17.png">
-        </div>
+        <div class="child-2-1"> 
+            <div class="img" (mouseover)="sql = false" (mouseout)="sql = true">
+            <img   *ngIf="sql else datasql" src="https://www.freeiconspng.com/uploads/sql-database-icon-png-17.png">
+            <ng-template #datasql>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'SQL'"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+        </div></div>
         <div class="child-2-1">
-            <img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png">
-        </div>
+            <div class="img"(mouseover)="firebase = false" (mouseout)="firebase = true" >
+            <img  *ngIf="firebase else datafire" src="https://www.neoito.com/images/firebase.png"/>
+            <ng-template #datafire>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'Firebase'" [titleFontSize]="17"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+        </div></div>
         <div class="child-2-1"></div>
         <div class="child-2-1"></div>
         <div class="child-2-1"></div>
@@ -75,14 +168,34 @@
         <div class="child-2-1">
             <p>Others</p>
         </div>
-        <div class="child-2-1"> <img src="https://cdn.worldvectorlogo.com/logos/figma-1.svg">
-        </div>
         <div class="child-2-1">
-            <img src="https://www.freeiconspng.com/uploads/github-logo-icon-16.png">
-        </div>
-        <div class="child-2-1"><img
+            <div class="img"(mouseover)="figma = false" (mouseout)="figma = true">
+             <img   *ngIf="figma else datafigma" src="https://cdn.worldvectorlogo.com/logos/figma-1.svg">
+            <ng-template #datafigma>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'Figma'"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+        </div></div>
+        <div class="child-2-1">
+            <div class="img" (mouseover)="github = false" (mouseout)="github = true">
+            <img  *ngIf="github else datagit" src="https://www.freeiconspng.com/uploads/github-logo-icon-16.png">
+            <ng-template #datagit>
+                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                [animation]="true"  [title]="'Github'"
+                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+            </ng-template>
+        </div></div>
+        <div class="child-2-1">
+            <div class="img"(mouseover)="algo = false" (mouseout)="algo = true" >
+            <img  *ngIf="algo else dataalgo"
                 src="https://repository-images.githubusercontent.com/228680590/a2865300-2f2c-11ea-9e67-839d7c618d69">
-        </div>
+                <ng-template #dataalgo>
+                    <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
+                    [animation]="true"  [title]="'Algorithm'" [titleFontSize]="15   "
+                      [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
+                </ng-template>
+        </div></div>
         <div class="child-2-1"></div>
         <div class="child-2-1"></div>
         <div class="child-2-1"></div>
