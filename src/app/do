@@ -7,8 +7,9 @@ Grid base layout design - css grid
 overlay                 - css and z-index
 circular progress bar   - npm package
 // follow this order
-add skill value
 animation
 mediaquery
 optimize - lazy load,image to firebase ,less resource
 deploy
+seo
+first on website

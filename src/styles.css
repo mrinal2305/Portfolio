@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /* Border box declaration 
 https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+@import '~animate.css/animate.min';
 @font-face {
   font-family: 'OpenSans';
   src: url(assets/Open_Sans/OpenSans-Regular.ttf) format("truetype");

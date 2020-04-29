@@ -10,6 +10,7 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ContactComponent } from './contact/contact.component';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    AnimateOnScrollModule.forRoot(),
     NgCircleProgressModule.forRoot({
       radius: 60,
       space: -7,
