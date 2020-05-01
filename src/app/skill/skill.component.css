@@ -45,10 +45,7 @@
     grid-template-columns: 25% repeat(6, 12.5%);
 }
 
-.child-2-1{
-    font-family: OpenSans;
-    padding : 4%;
-}
+
 
 .child-2-1 p {
     font-family: OpenSans;
@@ -65,6 +62,11 @@
     grid-template-rows: 100%;
     grid-template-columns: 25% repeat(6, 12.5%);
 }
+
+.child-4-4-3{
+    display: none;
+}
+
 
 .child-4 {
     grid-row: 7/8;
@@ -99,4 +101,86 @@ img {
     height: 60%;width: 50%;margin: 5%;
 }
 
+.react{
+    height: 70%;width: 60%;margin-left: 15%;
+}
 
+.bootstrap{
+    height: 50%;width: 38%;margin-left: 12%;
+}
+
+@media only all
+and (min-device-width : 768px)   
+
+and (max-device-width : 1024px) 
+{
+    .img{
+        height: 45%;
+        width: 50%;
+    }
+
+    .react{
+        height: 50%;
+    }
+
+    .bootstrap{
+        height: 40%;
+    }
+}
+
+/* For 640 Resolution */
+@media only all
+and (min-device-width : 360px)   
+and (max-device-width : 640px)  
+{
+    .child-1 p{
+        font-size: 1.5em;
+        margin-top: 100%;
+    }
+
+    .child-2-1 p{
+        font-size:1em;
+    }
+
+    .child-2-2-1{
+        grid-column: 3/4;
+    }
+
+    .child-5-5-1{
+        grid-column: 3/4;
+    }
+
+    .child-6-6-1{
+        grid-column: 3/4;
+    }
+
+    .child-4-4-1{
+        grid-column: 3/4;
+    }
+
+    .child-3-3-1{
+        grid-column: 3/4;
+    }
+
+    .child-3-3-6{
+        display: none;
+    }
+
+    .child-4-4-3{
+        display: block;
+    }
+    
+
+    .img{
+        height: 50%;width: 50%;margin: 5%;
+    }
+    
+    .react{
+        height: 50%;width: 65%;margin-left: 15%;
+    }
+    
+    .bootstrap{
+        height: 40%;width: 38%;margin-left: 12%;
+    }
+
+}

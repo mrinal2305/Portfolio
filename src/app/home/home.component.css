@@ -1,34 +1,34 @@
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 45% auto 28%;
-    height : 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("./../../assets/images/small.jpg");
     background-size: cover;
-    width:100%;
+    width: 100%;
 }
 
-img{
+img {
     height: 52%;
     width: 32%;
     margin-top: 8%;
     margin-left: 34%;
 }
 
-.child-1{
+.child-1 {
     grid-row: 1/2;
-    grid-column: 2/3; 
+    grid-column: 2/3;
 }
 
-.child-2{
+.child-2 {
     grid-row: 3/4;
     grid-column: 2/3;
 }
 
-.child-3{
-    grid-row:2/3;
+.child-3 {
+    grid-row: 2/3;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: auto 29% auto;
@@ -36,24 +36,24 @@ img{
     margin-top: 2%;
 }
 
-.child-3-1{
+.child-3-1 {
     grid-column: 2/3;
     background-color: #020202;
-    width: 67%;
-    margin-top: 20%;
-    height: 25%;
-    margin-left: 14%;
+    width: 100%;
+    margin-top: 14%;
+    height: 58%;
+    margin-left: 0%;
 }
 
-.child-3-1 p{
-    color : white;
+.child-3-1 p {
+    color: white;
     font-family: Roboto;
     font-size: 1.5em;
     margin: 0;
     padding-left: 23%;
 }
 
-button{
+button {
     border: 1px solid black;
     background: #d2d3d2;
     border: none;
@@ -63,18 +63,64 @@ button{
     margin-left: 37%;
     margin-top: 20;
     margin-top: 8%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: OpenSans; 
-    margin:0px; 
+    font-family: OpenSans;
+    margin: 0px;
 }
 
-a:hover{
+a:hover {
     border-bottom: 2px solid #424242;
+}
+
+@media only all and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .child-3-1 {
+        grid-column: 2/3;
+        background-color: #020202;
+        width: 100%;
+        margin-top: 24%;
+        height: 45%;
+        margin-left: 0%;
+    }
+}
+
+@media only all and (min-device-width: 768px) and (max-device-width: 870px) {
+    
+img {
+    height: 33%;
+    width: 28%;
+    margin-top: 15%;
+    margin-left: 34%;
+}
+
+}
+
+@media only all
+and (min-device-width : 360px)   
+and (max-device-width : 640px)  
+{ 
+    img {
+        height: 40%;
+        width: 32%;
+        margin-top: 20%;
+        margin-left: 32%;
+    }
+
+    button{
+        width : 30%;
+    }
+
+    a{
+        font-size: 1.3em;
+    }
+
+    .child-3{
+        grid-template-columns: auto 34% auto;
+    }
 }

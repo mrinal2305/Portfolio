@@ -55,7 +55,7 @@ export class AppComponent implements AfterViewInit {
   onWindowScroll(e) {
     let offset = window.pageYOffset; 
     // console.log(offset);
-     if (window.pageYOffset >= this.navbarOffset ) {
+     if (window.pageYOffset >= window.outerHeight ) {
        let element = document.getElementById('navbar');
        element.classList.add('sticky');
        document.getElementById('hamburger').classList.add('sticky-hamburger');

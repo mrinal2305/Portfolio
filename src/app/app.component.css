@@ -14,6 +14,10 @@
     height: 9%;
 }
 
+.exp {
+    flex: 0 0 12%;
+}
+
 .skill {
     height: 120%;
 }
@@ -43,8 +47,8 @@
     z-index: 3;
 }
 
-.sticky-hamburger{
-    display: flex;
+.sticky-hamburger {
+    display: none;
     flex-direction: row;
     background-color: white;
     width: 100%;
@@ -59,53 +63,56 @@ ul {
     margin: 0 auto;
 }
 
-.list{
-    display: flex;
+.list {
+    display: none;
     flex-direction: row;
     background-color: transparent;
 }
 
-.mobile-1{
+.mobile-1 {
     flex-grow: 1;
 }
 
-.mobile-2{
+.mobile-2 {
+   
     flex: 0 0 20%;
-    color:#424242;
+    color: #424242;
     background-color: #e1e2e1;
 }
 
-.mobile-2 ul{
+.mobile-2 ul {
     padding: 0;
 }
 
-.mobile-2 ul li{
+.mobile-2 ul li {
     padding: 6%;
 }
 
-img{
+img {
     width: 60%;
     height: 60%;
     margin: 6% 0;
 }
 
-img:hover{
+img:hover {
     cursor: pointer;
 }
 
 .hamburger {
-    display: flex;
+    display: none;
     flex-direction: row;
     height: 100%;
 }
 
 .hamburger-child-1 {
-    flex-grow : 1;
+    flex-grow: 1;
     height: 100%;
 }
 
+
+
 .hamburger-child-2 {
-    flex : 0 0 20%;
+    flex: 0 0 20%;
     height: 100%;
 }
 
@@ -139,4 +146,52 @@ a:hover {
 .row {
     display: flex;
     flex-direction: row;
+}
+
+@media only all and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .exp {
+        flex: 0 0 15%;
+    }
+
+    .sticky {
+        box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.08);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        animation: moveDown 0.5s ease-in-out;
+        background-color: #e1e2e1d4;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.15);
+        height: 5%;
+        z-index: 3;
+    }
+
+    .animated {
+        background-color: #e1e2e1d4;
+        margin-bottom: 1%;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.15);
+        height: 5%;
+    }
+}
+
+@media only all and (min-device-width: 360px) and (max-device-width: 640px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .row {
+        display: none;
+    }
+
+    .list{
+        display: flex;
+    }
+
+    .mobile-2 {
+        margin-right: 7%;
+        padding: 6%;
+    }
+
+    .sticky-hamburger{
+        display: flex;
+    }
 }
