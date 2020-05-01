@@ -1,16 +1,21 @@
 .grid-container {
     display: grid;
     grid-template-rows: 13% 4% 14% 3% 14% 1% 14% 3% 14% 3% 14% 3%;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .child-1 {
     grid-row: 1/2;
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
 }
 
+
 #myProgress {
-    width: 100%;
+    width: 100%; 
     background-color: grey;
   }
 
@@ -29,7 +34,7 @@
     font-family: Raleway;
     font-size: 2.5em;
     font-weight: 500;
-    margin: 3% 30% 50% 45%;
+    margin: 0;
 }
 
 .child-2 {
@@ -93,4 +98,5 @@ img {
 .img{
     height: 60%;width: 50%;margin: 5%;
 }
+
 

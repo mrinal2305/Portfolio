@@ -39,14 +39,18 @@ img{
 .child-3-1{
     grid-column: 2/3;
     background-color: #020202;
+    width: 67%;
+    margin-top: 20%;
+    height: 25%;
+    margin-left: 14%;
 }
 
 .child-3-1 p{
     color : white;
     font-family: Roboto;
     font-size: 1.5em;
-    padding-top: 9%;
-    margin-left: 23%;
+    margin: 0;
+    padding-left: 23%;
 }
 
 button{

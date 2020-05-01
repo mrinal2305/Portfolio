@@ -6,7 +6,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     height: 100%;
     grid-template-rows: 15% 10% 25% 5% 25% 5% 25%;
     width: 100%;
@@ -18,6 +18,9 @@
 
 .child-1 {
     grid-row: 1/2;
+    width: 14%;
+    margin-left: 43%;
+    margin-right: 43%;
 }
 
 .child-1 p {
@@ -26,13 +29,12 @@
     font-family: Raleway;
     font-size: 2.5em;
     font-weight: 500;
-    margin: 3% 30% 50% 45%;
 }
 
 .child-2 {
     grid-row: 3/4;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 100%;
     grid-template-columns: repeat(5, 15.2%);
     grid-gap: 4%;
     justify-content: center;
@@ -72,7 +74,7 @@
 .child-3 {
     grid-row: 5/6;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 100%;
     grid-template-columns: repeat(5, 15.2%);
     grid-gap: 4%;
     justify-content: center;
@@ -101,7 +103,7 @@ img {
     grid-column: 2/3;
     display: grid;
     grid-row: 2/3;
-    grid-template-columns: 84% auto;
+    grid-template-columns: 84% 16%;
     grid-template-rows: 5% 62% 5% 6% 16% 6%;
     background-color: white;
 }

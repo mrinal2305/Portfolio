@@ -20,7 +20,6 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     SkillComponent,
     EducationComponent,
     ExperienceComponent,
-
     ContactComponent
   ],
   imports: [

@@ -1,10 +1,11 @@
 <div class="container">
     <div class="child-1">
-        <div class="child-1-1 animated"  animateOnScroll animationName="fadeInLeft">
-            <p>About</p>
+        <div class="child-1-1 animated" style="animation-duration: 2s;" animateOnScroll animationName="fadeInLeft">
+            <p class="child-1-1-1">About</p>
         </div>
-        <div class="child-1-2">
-            <p class="animated" style="animation-duration: 1s;" animateOnScroll animationName="fadeIn">
+        <div class="child 1-2"></div>
+        <div class="child-1-3">
+            <p class="animated" style="animation-duration: 1s;" animateOnScroll animationName="fadeInLeft" style="animation-duration: 2s;">
                 My name is <span style="color: #333333;">Mrinal Kumar karn</span> and my portfolio is a representation
                 of all of that I have learned
                 and accomplished as <span>C.S.E</span> student.I am a programmer who like to develop and build software
@@ -13,30 +14,30 @@
                     target="_blank" style="color: #6d6d6d; text-decoration: none;">epicure</a> who always ready to learn
                 new things.</p>
         </div>
-        <div class="child-1-3">
+        <div class="child-1-4">
             <div></div>
             <div class="ln" >
                 <a href="https://www.linkedin.com/in/mrinal-kumar-karn-502133171/" target="_blank" (mouseover)="ln = false" (mouseout)="ln = true">
-                    <img class="animated  animted " animateOnScroll animationName="fadeInUp" *ngIf="ln;else dark"
+                    <img class="animated" animateOnScroll animationName="fadeInLeft"  style="animation-duration: 2s;" *ngIf="ln;else dark"
                     src="./../../assets/svg/linkedin-brands.svg">
                     <ng-template #dark><img src="./.././../assets/svg/linkedin-brands-dark.svg"></ng-template>
                 </a>
             </div>
-            <div class="fb animted delay-2s" animateOnScroll animationName="fadeInUp">
+            <div class="fb">
                 <a href="https://www.facebook.com/mrinal.kumarkarn" target="_blank" (mouseover)="fb = false" (mouseout)="fb = true">
-                    <img  class="animated  animted " animateOnScroll animationName="fadeInUp" *ngIf="fb;else darkfb" src="./../../assets/svg/facebook-square-brands.svg">
+                    <img  class="animated" animateOnScroll animationName="fadeInLeft"  style="animation-duration: 2s;" *ngIf="fb;else darkfb" src="./../../assets/svg/facebook-square-brands.svg">
                     <ng-template #darkfb><img src="./.././../assets/svg/facebook-square.svg"></ng-template>
                 </a>
             </div>
-            <div class="gb animted delay-2s" animateOnScroll animationName="fadeInUp">
+            <div class="gb">
                 <a href="https://github.com/mrinal2305" target="_blank" (mouseover)="gb = false" (mouseout)="gb = true" >
-                    <img class="animated  animted" animateOnScroll animationName="fadeInUp" *ngIf="gb;else darkgb" src="./../../assets/svg/github-square-brands.svg">
+                    <img class="animated" animateOnScroll animationName="fadeInLeft"  style="animation-duration: 2s;" *ngIf="gb;else darkgb" src="./../../assets/svg/github-square-brands.svg">
                     <ng-template #darkgb><img src="./.././../assets/svg/github-s.svg"></ng-template>
                 </a>
             </div>
-            <div class="gmanimted delay-2s" animateOnScroll animationName="fadeInUp">
+            <div class="gm">
                 <a href="mailto:mrinalkumarkarn24@gmail.com" target="_blank" (mouseover)="gm = false" (mouseout)="gm = true">
-                    <img class="animated  animted delay-1s" animateOnScroll animationName="fadeInUp" *ngIf="gm;else darkgm" src="./../../assets/svg/envelope-square-solid.svg">
+                    <img class="animated" animateOnScroll animationName="fadeInLeft" style="animation-duration: 2s;" *ngIf="gm;else darkgm" src="./../../assets/svg/envelope-square-solid.svg">
                     <ng-template #darkgm><img src="./.././../assets/svg/envelope-square.svg"></ng-template>
                 </a>
             </div>
@@ -44,10 +45,10 @@
         </div>
     </div>
     <div class="child-2">
-        <div class="child-2-1 animated" animateOnScroll animationName="fadeInRight" >
-            <p>Education</p>
+        <div class="child-2-1 animated" style="animation-duration: 2s;" animateOnScroll animationName="fadeInRight" >
+            <p class="child-2-1-1">Education</p>
         </div>
-        <div class="child-2-2 animated delay-1s" animateOnScroll animationName="fadeIn">
+        <div class="child-2-2 animated" animateOnScroll animationName="fadeInRight" style="animation-duration: 2s;">
             <div class="child-2-3-1">
                 <div class="child-2-3-1-1">
                     <p>Sunshine Prep/High School</p>
@@ -63,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="child-2-3 animated delay-1s" animateOnScroll animationName="fadeIn">
+        <div class="child-2-3 animated " animateOnScroll animationName="fadeInRight" style="animation-duration: 2s;">
             <div class="child-2-3-1">
                 <div class="child-2-3-1-1">
                     <p>School of Creative Learning</p>
@@ -79,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="child-2-4 animated delay-1s" animateOnScroll animationName="fadeIn">
+        <div class="child-2-4 animated" animateOnScroll animationName="fadeInRight" style="animation-duration:2s">
             <div class="child-2-3-1">
                 <div class="child-2-3-1-1">
                     <p>NIT ,PATNA</p>

@@ -2,19 +2,36 @@
     <app-home></app-home>
 </div>
 
-<div class="animated" id="navbar">
+<div class="animated" id="navbar" #navbar>
+    <div class="hamburger" style="display: none;">
+        <div class="hamburger-child-1" ></div>
+        <div class="hamburger-child-2"><img (click)="show = !show" src="./../assets/svg/bars-solid.svg"></div>
+    </div>
     <ul class="row">
         <li class="col"><a (click)="click($event)"  href="#home" id="6" [ngClass]="{'active': currentActive == 6}" #home>Home</a></li>
         <li class="col"><a (click)="click($event)"  id="1" href="#education" [ngClass]="{'active': currentActive == 1}" #edu>About</a></li>
         <li class="col"><a (click)="click($event)"  href="#skill" id="2" [ngClass]="{'active': currentActive == 2}">Skill</a></li>
         <li class="col"><a (click)="click($event)"  href="#project" id="3" [ngClass]="{'active': currentActive == 3}">Project</a></li>
-        <li class="col"><a (click)="click($event)"  href="#experience" id="4" [ngClass]="{'active': currentActive == 4}">Train. & Exp.</a></li>
+        <li class="col"><a (click)="click($event)"  href="#experience" id="4" [ngClass]="{'active': currentActive == 4}" style="flex:0 0 12%">Train. & Exp.</a></li>
         <li class="col"><a href="#">Resume</a></li>
     </ul> 
      <!-- ng-directive very usefull -->
 </div>
 
 <div class="education" id="education" #edu>
+    <div class="list" id="hamburger">
+    <div class="mobile-1"></div>
+    <div class="mobile-2" *ngIf="show">
+        <ul>
+            <li><a href="#home" (click)="click($event)"  href="#home" id="6" [ngClass]="{'active': currentActive == 6}" #home>Home</a></li>
+            <li><a href="#education" (click)="click($event)"  id="1" href="#education" [ngClass]="{'active': currentActive == 1}" #edu>About</a></li>
+            <li><a href="#skill" (click)="click($event)"  href="#skill" id="2" [ngClass]="{'active': currentActive == 2}">Skill</a></li>
+            <li><a href="#project" (click)="click($event)"  href="#project" id="3" [ngClass]="{'active': currentActive == 3}">Projects</a></li>
+            <li><a href="#experience" (click)="click($event)"  href="#experience" id="4" [ngClass]="{'active': currentActive == 4}" >Train. and Exp</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+    </div>
+</div>
     <app-education></app-education>
 </div>
 

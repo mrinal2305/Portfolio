@@ -11,26 +11,28 @@ import { DOCUMENT } from '@angular/common';
     [ 
       state('void', style({ opacity : 0})),
       transition(':enter',[ animate(300)]),
-      transition(':leave',[ animate(500)]),
+      transition(':leave',[ animate(900)]),
     ]
 )]
 })
 // Add a div of height 5% after each for best scrolling effect
 export class AppComponent implements AfterViewInit {
   currentActive = 0;
-  homeoffset : Number = null;
-  eduoffset  : Number = null;
-  skilloffset : Number = null;
-  projectoffset : Number = null;
-  experienceoffset : Number = null;
-  contactoffset : Number = null;
-
+  homeoffset : any = null;
+  eduoffset  : any = null;
+  skilloffset : any = null;
+  projectoffset : any = null;
+  experienceoffset : any = null;
+  contactoffset : any = null;
+  navbarOffset : any = null;
+  show = false;
   @ViewChild('home') homeElement : ElementRef;
   @ViewChild('edu')  eduElement  : ElementRef;
   @ViewChild('skill')  skillElement  : ElementRef;
   @ViewChild('project')  projectElement  : ElementRef;
   @ViewChild('experience')  experienceElement  : ElementRef;
   @ViewChild('contact')  contactElement  : ElementRef;
+  @ViewChild('navbar')  navbarElement  : ElementRef;
 
   constructor(@Inject(DOCUMENT) document) { }
 
@@ -44,27 +46,31 @@ export class AppComponent implements AfterViewInit {
     this.skilloffset  = this.skillElement.nativeElement.offsetTop;
     this.projectoffset  = this.projectElement.nativeElement.offsetTop;
     this.experienceoffset  = this.experienceElement.nativeElement.offsetTop;
+    this.navbarOffset  = this.navbarElement.nativeElement.offsetTop;
    }
 
+   
   @HostListener('window:scroll', ['$event'])
   // Code for sticky navbar -----------  VVI
   onWindowScroll(e) {
-    let offset = window.pageYOffset+50; 
-
-     if (offset > 640) {
+    let offset = window.pageYOffset; 
+    // console.log(offset);
+     if (window.pageYOffset >= this.navbarOffset ) {
        let element = document.getElementById('navbar');
        element.classList.add('sticky');
+       document.getElementById('hamburger').classList.add('sticky-hamburger');
      } else {
       let element = document.getElementById('navbar');
         element.classList.remove('sticky'); 
+        document.getElementById('hamburger').classList.remove('sticky-hamburger');
      }
 
     
     // Code for highlight menu item on scroll --------------- VVI
-     if(offset >= this.homeoffset && offset < this.eduoffset) this.currentActive = 6
-     else if(offset >= this.eduoffset && offset < this.skilloffset) this.currentActive = 1
-     else if(offset >= this.skilloffset && offset < this.projectoffset) this.currentActive = 2
-     else if(offset >= this.projectoffset && offset < this.experienceoffset) this.currentActive = 3
+     if(offset >= this.homeoffset-90 && offset < this.eduoffset-90) this.currentActive = 6
+     else if(offset >= this.eduoffset-90 && offset < this.skilloffset-90) this.currentActive = 1
+     else if(offset >= this.skilloffset-90 && offset < this.projectoffset-90) this.currentActive = 2
+     else if(offset >= this.projectoffset-90 && offset < this.experienceoffset-90) this.currentActive = 3
      else  this.currentActive = 4;
   }
 

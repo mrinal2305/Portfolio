@@ -1,38 +1,38 @@
  <div class="container">
 <div class="grid-container">
     <div class="child-1">
-        <p class="child-1-2-1 animated" animateOnScroll animationName="fadeInLeft">Project</p>
+        <p class="child-1-2-1 animated" animateOnScroll animationName="fadeInLeft"  style="animation-duration:2s">Project</p>
     </div>
     <div class="child-2">
-        <div class="child-2-1 animated" animateOnScroll animationName="fadeInLeft" (mouseover)="lib = false" (mouseout) = "lib = true">
+        <div class="child-2-1  animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInLeft" (mouseover)="lib = false" (mouseout) = "lib = true">
             <img  *ngIf="lib else datalib" src="./../../assets/project/library.jpg">
             <ng-template #datalib>
                 <p>e-Library</p>
                 <button (click)="popupFn($event)" id="1">View More</button>
         </ng-template>
         </div>
-        <div class="child-2-1  animated" animateOnScroll animationName="fadeInLeft"  (mouseover)="express = false" (mouseout) = "express = true">
+        <div class="child-2-1  animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInLeft"  (mouseover)="express = false" (mouseout) = "express = true">
             <img *ngIf="express else dataexp" src="./../../assets/project/express.PNG">
             <ng-template #dataexp>
                 <p>Expess</p>
                 <button (click)="popupFn($event)" id="2">View More</button>
         </ng-template>
         </div>
-        <div class="child-2-1  animated" animateOnScroll animationName="fadeIn" (mouseover)="oshop = false" (mouseout) = "oshop = true">
+        <div class="child-2-1  animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeIn" (mouseover)="oshop = false" (mouseout) = "oshop = true">
             <img  *ngIf="oshop else data" src="./../../assets/project/oshop.jpg">
             <ng-template #data>
                     <p>Oshop</p>
                     <button (click)="popupFn($event)" id="3">View More</button>
             </ng-template>
         </div>
-        <div class="child-2-1  animated" animateOnScroll animationName="fadeInRight" (mouseover)="readit = false" (mouseout) = "readit = true">
+        <div class="child-2-1  animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInRight" (mouseover)="readit = false" (mouseout) = "readit = true">
             <img *ngIf="readit else dataread" src="./../../assets/project/Capture.PNG">
             <ng-template #dataread>
                 <p>ReadIt</p>
                 <button (click)="popupFn($event)" id="4">View More</button>
         </ng-template>
         </div>
-        <div class="child-2-1  animated" animateOnScroll animationName="fadeInRight" (mouseover)="tictac = false" (mouseout) = "tictac = true">
+        <div class="child-2-1  animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInRight" (mouseover)="tictac = false" (mouseout) = "tictac = true">
             <img *ngIf="tictac else datatic" src="./../../assets/project/ticTacToe.jpg">
             <ng-template #datatic>
                 <p>Tic Tac Toe</p>
@@ -41,21 +41,21 @@
         </div>
     </div>
     <div class="child-3">
-        <div class="child-2-1  animated" animateOnScroll animationName="fadeInLeft" (mouseover)="list = false" (mouseout) = "list = true">
+        <div class="child-2-1  animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInLeft" (mouseover)="list = false" (mouseout) = "list = true">
             <img *ngIf="list else datalist" src="./../../assets/project/shoppingList.jpg">
             <ng-template #datalist>
                 <p>List</p>
                 <button (click)="popupFn($event)" id="6">View More</button>
         </ng-template>
         </div>
-        <div class="child-2-1 animated" animateOnScroll animationName="fadeInLeft" (mouseover)="clone = false" (mouseout) = "clone = true">
+        <div class="child-2-1  animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInLeft" (mouseover)="clone = false" (mouseout) = "clone = true">
             <img *ngIf="clone else dataclone" src="./../../assets/project/unacedemy.jpg">
             <ng-template #dataclone>
                 <p>Clone</p>
-                <button (click)="popupFn($event)" id="7">View More</button>
+                <button ( click)="popupFn($event)" id="7">View More</button>
         </ng-template>
         </div>
-        <div class="child-2-1 animated" animateOnScroll animationName="fadeIn" (mouseover)="logo = false" (mouseout) = "logo = true">
+        <div class="child-2-1  animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeIn" (mouseover)="logo = false" (mouseout) = "logo = true">
             <img *ngIf="logo else datalogo" src="./../../assets/project/log.jpg">
             <ng-template #datalogo>
                 <p>Logo</p>
