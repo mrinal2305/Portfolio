@@ -39,7 +39,7 @@
 .child-1-2-1 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 55% 15% 21% 9%;
+    grid-template-rows: 55% 20% 20% 8%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
    
