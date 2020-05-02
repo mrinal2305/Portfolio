@@ -11,7 +11,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ContactComponent } from './contact/contact.component';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
-import { LazyLoadImageModule } from 'ng-lazyload-image';  
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';  
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
       clockwise: false,
       startFromZero: false,
       titleColor : "#6d6d6d"
-    })
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production,registrationStrategy: 'registerImmediately' })
   ],
   providers: [],
   bootstrap: [AppComponent]
