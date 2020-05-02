@@ -8,22 +8,43 @@
         </div>
         <div class="child-2-2-1">
             <div (mouseover)="c=false" (mouseout)="c=true" class="img">
-                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;" *ngIf="c else data" src="./../../assets/skills/c.png" style="margin: 25%; margin-left: 1%;">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="c else data" src="./../../assets/skills/c.png" style="margin: 25%; margin-left: 1%;">
                 <ng-template #data>
-                    <circle-progress [percent]="50" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                    <div class="desktop">
+                        <circle-progress [percent]="50" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
                         [space]="-7" [animation]="true" [title]="'C++'" [animationDuration]="300" [subtitle]="'50%'">
                     </circle-progress>
+                    </div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="50" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'C++'" [animationDuration]="300" [subtitle]="'50%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                   
                 </ng-template>
             </div>
         </div>
         <div class="child-2-2-2">
             <div (mouseover)="js = false" (mouseout)="js = true" class="img">
-                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;" *ngIf="js else datajs"
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" style="margin: 25%;margin-left: 1%;">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="js else datajs"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png"
+                    style="margin: 25%;margin-left: 1%;">
                 <ng-template #datajs>
-                    <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                <div class="desktop"><circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
                         [space]="-7" [animation]="true" [title]="'JS'" [animationDuration]="300" [subtitle]="'70%'">
-                    </circle-progress>
+                    </circle-progress></div>
+                <div class="mobilesmall">
+                    <circle-progress [percent]="70" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                [space]="-5" [animation]="true" [title]="'JS'" [animationDuration]="300" [subtitle]="'70%'"
+                [titleFontSize]="13"
+                    [subtitleFontSize]="11"></circle-progress>
+                </div>
                 </ng-template>
             </div>
         </div>
@@ -39,101 +60,218 @@
             <p class="animated" animateOnScroll animationName="fadeInLeft">Devlopment</p>
         </div>
         <div class="child-3-3-1">
-            <div class="img" (mouseover)="html = false" (mouseout)="html = true" >
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;" *ngIf="html else datahtml" src="https://img.icons8.com/color/240/000000/html-5.png" />
-            <ng-template #datahtml>
-                <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'HTML'"
-                  [animationDuration]="300" [subtitle]="'70%'"></circle-progress>
-            </ng-template>
-        </div>       
+            <div class="img" (mouseover)="html = false" (mouseout)="html = true">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="html else datahtml" src="https://img.icons8.com/color/240/000000/html-5.png" />
+                <ng-template #datahtml>
+                    <div class="desktop"> <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'HTML'" [animationDuration]="300" [subtitle]="'70%'">
+                    </circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="70" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'HTML'" [animationDuration]="300" [subtitle]="'70%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                   
+                </ng-template>
+            </div>
         </div>
         <div class="child-3-3-2">
             <div class="img" (mouseover)="css = false" (mouseout)="css = true">
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;" *ngIf="css else datacss" src="https://img.icons8.com/color/240/000000/css3.png" /> 
-            <ng-template #datacss>
-                <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'CSS'"
-                  [animationDuration]="300" [subtitle]="'70%'"></circle-progress>
-            </ng-template>
-        </div>
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="css else datacss" src="https://img.icons8.com/color/240/000000/css3.png" />
+                <ng-template #datacss>
+                    <div class="desktop">  <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'CSS'" [animationDuration]="300" [subtitle]="'70%'">
+                    </circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="70" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'CSS'" [animationDuration]="300" [subtitle]="'70%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                  
+                </ng-template>
+            </div>
         </div>
         <div class="child-3-3-3">
             <div class="img react" (mouseover)="react = false" (mouseout)="react = true">
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;" *ngIf="react else datareact"  style="width: 55%;
-            height: 105%;
-            margin: 9%;
-            margin: 6% 20%;" style="height:80%;width:70%" src="https://img.icons8.com/officel/160/000000/react.png">
-            <ng-template #datareact>
-                <circle-progress [percent]="30" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'React'"
-                  [animationDuration]="300" [subtitle]="'30%'"></circle-progress>
-            </ng-template>
-        </div>
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="react else datareact" style="width: 55%;
+                height: 105%;
+                margin: 9%;
+                margin: 6% 20%;" style="height:80%;width:70%"
+                    src="https://img.icons8.com/officel/160/000000/react.png">
+                <ng-template #datareact>
+                    <div class="desktop">  <circle-progress [percent]="30" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'React'" [animationDuration]="300" [subtitle]="'30%'">
+                    </circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="30" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'React'" [animationDuration]="300" [subtitle]="'30%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                  
+                </ng-template>
+            </div>
         </div>
         <div class="child-3-3-4">
-            <div class="img" (mouseout)="angular = true"(mouseover)="angular = false" >
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"  *ngIf="angular else dataangular" src="https://img.icons8.com/color/240/000000/angularjs.png">
-            <ng-template #dataangular>
-                <circle-progress [percent]="50" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'Angular'" [titleFontSize]="17"
-                  [animationDuration]="300" [subtitle]="'50%'"></circle-progress>
-            </ng-template></div>
+            <div class="img" (mouseout)="angular = true" (mouseover)="angular = false">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="angular else dataangular" src="https://img.icons8.com/color/240/000000/angularjs.png">
+                <ng-template #dataangular>
+                    <div class="desktop"> <circle-progress [percent]="50" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'Angular'" [titleFontSize]="17"
+                        [animationDuration]="300" [subtitle]="'50%'"></circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="50" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'Angular'" [animationDuration]="300" [subtitle]="'50%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                   
+                </ng-template>
+            </div>
         </div>
         <div class="child-3-3-5">
-            <div class="img"  (mouseover)="electron = false" (mouseout)="electron = true" >
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"*ngIf="electron else dataelectron" src="https://hackr.io/tutorials/electron/logo-electron.svg?ver=1551354757">
-        
-            <ng-template #dataelectron>
-                <circle-progress [percent]="30" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'Electron'" [titleFontSize]="17"
-                  [animationDuration]="300" [subtitle]="'30%'"></circle-progress>
-            </ng-template></div>
+            <div class="img" (mouseover)="electron = false" (mouseout)="electron = true">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="electron else dataelectron"
+                    src="https://hackr.io/tutorials/electron/logo-electron.svg?ver=1551354757">
+
+                <ng-template #dataelectron>
+                    <div class="desktop">  <circle-progress [percent]="30" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'Electron'" [titleFontSize]="17"
+                        [animationDuration]="300" [subtitle]="'30%'"></circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="50" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'Electron'" [animationDuration]="300" [subtitle]="'30%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                  
+                </ng-template>
+            </div>
         </div>
-        <div class="child-3-3-6"> 
+        <div class="child-3-3-6">
             <div class="img" (mouseover)="node = false" (mouseout)="node = true">
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"  *ngIf="node else datanode" src="https://img.icons8.com/color/480/nodejs.png">
-            <ng-template #datanode>
-                <circle-progress [percent]="40" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'Node'"
-                  [animationDuration]="300" [subtitle]="'40%'"></circle-progress>
-            </ng-template>
-        </div>
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="node else datanode" src="https://img.icons8.com/color/480/nodejs.png">
+                <ng-template #datanode>
+                    <div class="desktop"> <circle-progress [percent]="40" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'Node'" [animationDuration]="300" [subtitle]="'40%'">
+                    </circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="40" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'Node'" [animationDuration]="300" [subtitle]="'40%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                   
+                </ng-template>
+            </div>
         </div>
     </div>
     <div class="child-4">
         <div>
         </div>
         <div class="child-4-4-1">
-            <div class="img"(mouseover)="jquery = false" (mouseout)="jquery = true" >
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;" *ngIf="jquery else datajq" src="https://cdn.iconscout.com/icon/free/png-512/jquery-10-1175155.png">
-            <ng-template #datajq>
-                <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'Jquery'"
-                  [animationDuration]="300" [subtitle]="'70%'"></circle-progress>
-            </ng-template>
-        </div></div>
+            <div class="img" (mouseover)="jquery = false" (mouseout)="jquery = true">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="jquery else datajq" src="https://cdn.iconscout.com/icon/free/png-512/jquery-10-1175155.png">
+                <ng-template #datajq>
+                    <div class="desktop">  <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'Jquery'" [animationDuration]="300" [subtitle]="'70%'">
+                    </circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="70" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'Jquery'" [animationDuration]="300" [subtitle]="'70%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                  
+                </ng-template>
+            </div>
+        </div>
         <div class="child-4-4-2">
-            <div class="img bootstrap"(mouseover)="bootstrap = false" (mouseout)="bootstrap = true">
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
-              *ngIf="bootstrap else databoot" src="https://3.bp.blogspot.com/-wNBgAfRVsag/XJPxeL-NY3I/AAAAAAAAJRM/NfJn04otlzM0gyUhV8sj_w_ak0wuZQPpACK4BGAYYCw/s1600/logo%2Bbootstrap%2Bicon.png">
-            <ng-template #databoot>
-                <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'Bootstrap'" [titleFontSize]="15"
-                  [animationDuration]="300" [subtitle]="'70%'"></circle-progress>
-            </ng-template>
-        </div></div>
-        <div class="child-4-4-3"> 
+            <div class="img bootstrap" (mouseover)="bootstrap = false" (mouseout)="bootstrap = true">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="bootstrap else databoot"
+                    src="https://3.bp.blogspot.com/-wNBgAfRVsag/XJPxeL-NY3I/AAAAAAAAJRM/NfJn04otlzM0gyUhV8sj_w_ak0wuZQPpACK4BGAYYCw/s1600/logo%2Bbootstrap%2Bicon.png">
+                <ng-template #databoot>
+                    <div class="desktop">  <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'Bootstrap'" [titleFontSize]="15"
+                        [animationDuration]="300" [subtitle]="'70%'"></circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="70" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'Bootstrap'" [animationDuration]="300" [subtitle]="'70%'"
+                        [titleFontSize]="11"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                  
+                </ng-template>
+            </div>
+        </div>
+        <div class="child-4-4-3">
             <div class="img" (mouseover)="node = false" (mouseout)="node = true">
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"  *ngIf="node else datanode" src="https://img.icons8.com/color/480/nodejs.png">
-            <ng-template #datanode>
-                <circle-progress [percent]="40" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'Node'"
-                  [animationDuration]="300" [subtitle]="'40%'"></circle-progress>
-            </ng-template>
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="node else datanode" src="https://img.icons8.com/color/480/nodejs.png">
+                <ng-template #datanode>
+                    <div class="desktop"><circle-progress [percent]="40" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'Node'" [animationDuration]="300" [subtitle]="'40%'">
+                    </circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="40" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'Node'" [animationDuration]="300" [subtitle]="'40%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                    
+                </ng-template>
+            </div>
         </div>
+        <div class="child-4-4-4">
+            <div class="img" (mouseover)="electron = false" (mouseout)="electron = true">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="electron else dataelectron"
+                    src="https://hackr.io/tutorials/electron/logo-electron.svg?ver=1551354757">
+
+                <ng-template #dataelectron>
+                    <div class="desktop"><circle-progress [percent]="30" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'Electron'" [titleFontSize]="17"
+                        [animationDuration]="300" [subtitle]="'30%'"></circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="30" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'Electron'" [animationDuration]="300" [subtitle]="'30%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                    
+                </ng-template>
+            </div>
         </div>
-        <div class="child-4-4-4"></div>
         <div class="child-4-4-5"></div>
         <div class="child-4-4-6"></div>
     </div>
@@ -142,33 +280,66 @@
             <p class="animated" animateOnScroll animationName="fadeInLeft">Databases</p>
         </div>
         <div class="child-5-5-1">
-            <div class="img"(mouseover)="mongo = false" (mouseout)="mongo = true">
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"  *ngIf="mongo else datamongo" src="https://img.icons8.com/color/480/mongodb.png">
-            <ng-template #datamongo>
-                <circle-progress [percent]="40" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'MongoDB'"  [titleFontSize]="15"
-                  [animationDuration]="300" [subtitle]="'40%'"></circle-progress>
-            </ng-template>
-</div>
+
+            <div class="img" (mouseover)="mongo = false" (mouseout)="mongo = true">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="mongo else datamongo" src="https://img.icons8.com/color/480/mongodb.png">
+                <ng-template #datamongo>
+                    <div class="desktop"> <circle-progress [percent]="40" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'MongoDB'" [titleFontSize]="13"
+                        [animationDuration]="300" [subtitle]="'40%'"></circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="40" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'MongoDB'" [animationDuration]="300" [subtitle]="'40%'"
+                        [titleFontSize]="11"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                   
+                </ng-template>
+            </div>
         </div>
-        <div class="child-5-5-2"> 
+        <div class="child-5-5-2">
             <div class="img" (mouseover)="sql = false" (mouseout)="sql = true">
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"  *ngIf="sql else datasql" src="https://www.freeiconspng.com/uploads/sql-database-icon-png-17.png">
-            <ng-template #datasql>
-                <circle-progress [percent]="40" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'SQL'"
-                  [animationDuration]="300" [subtitle]="'40%'"></circle-progress>
-            </ng-template>
-        </div></div>
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="sql else datasql" src="https://www.freeiconspng.com/uploads/sql-database-icon-png-17.png">
+                <ng-template #datasql>
+                    <div class="desktop"> <circle-progress [percent]="40" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'SQL'" [animationDuration]="300" [subtitle]="'40%'">
+                    </circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="40" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'SQL'" [animationDuration]="300" [subtitle]="'40%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                   
+                </ng-template>
+            </div>
+        </div>
         <div class="child-5-5-3">
-            <div class="img"(mouseover)="firebase = false" (mouseout)="firebase = true" >
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;" *ngIf="firebase else datafire" src="https://www.neoito.com/images/firebase.png"/>
-            <ng-template #datafire>
-                <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'Firebase'" [titleFontSize]="17"
-                  [animationDuration]="300" [subtitle]="'60%'"></circle-progress>
-            </ng-template>
-        </div></div>
+            <div class="img" (mouseover)="firebase = false" (mouseout)="firebase = true">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="firebase else datafire" src="https://www.neoito.com/images/firebase.png" />
+                <ng-template #datafire>
+                    <div class="desktop"> <circle-progress [percent]="60" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'Firebase'" [titleFontSize]="17"
+                        [animationDuration]="300" [subtitle]="'60%'"></circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="60" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'Firebase'" [animationDuration]="300" [subtitle]="'60%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                   
+                </ng-template>
+            </div>
+        </div>
         <div class="child-5-5-4"></div>
         <div class="child-5-5-5"></div>
         <div class="child-5-5-6"></div>
@@ -178,33 +349,62 @@
             <p class="animated" animateOnScroll animationName="fadeInLeft">Others</p>
         </div>
         <div class="child-6-6-1">
-            <div class="img"(mouseover)="figma = false" (mouseout)="figma = true">
-             <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"  *ngIf="figma else datafigma" src="https://cdn.worldvectorlogo.com/logos/figma-1.svg">
-            <ng-template #datafigma>
-                <circle-progress [percent]="50" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'Figma'"
-                  [animationDuration]="300" [subtitle]="'50%'"></circle-progress>
-            </ng-template>
-        </div></div>
+            <div class="img" (mouseover)="figma = false" (mouseout)="figma = true">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="figma else datafigma" src="https://cdn.worldvectorlogo.com/logos/figma-1.svg">
+                <ng-template #datafigma>
+                    <div class="desktop">  <circle-progress [percent]="50" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                        [space]="-7" [animation]="true" [title]="'Figma'" [animationDuration]="300" [subtitle]="'50%'">
+                    </circle-progress></div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="50" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                        [space]="-5" [animation]="true" [title]="'Figma'" [animationDuration]="300" [subtitle]="'50%'"
+                        [titleFontSize]="13"
+                            [subtitleFontSize]="11"
+                        >
+                    </circle-progress>
+                    </div>
+                  
+                </ng-template>
+            </div>
+        </div>
         <div class="child-6-6-2">
             <div class="img" (mouseover)="github = false" (mouseout)="github = true">
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;" *ngIf="github else datagit" src="https://www.freeiconspng.com/uploads/github-logo-icon-16.png">
-            <ng-template #datagit>
-                <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                [animation]="true"  [title]="'Github'"
-                  [animationDuration]="300" [subtitle]="'70%'"></circle-progress>
-            </ng-template>
-        </div></div>
-        <div class="child-6-6-3">
-            <div class="img"(mouseover)="algo = false" (mouseout)="algo = true" >
-            <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;" *ngIf="algo else dataalgo"
-                src="https://repository-images.githubusercontent.com/228680590/a2865300-2f2c-11ea-9e67-839d7c618d69">
-                <ng-template #dataalgo>
-                    <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3" [space]="-7"
-                    [animation]="true"  [title]="'Algorithm'" [titleFontSize]="15   "
-                      [animationDuration]="300" [subtitle]="'70%'"></circle-progress>
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="github else datagit" src="https://www.freeiconspng.com/uploads/github-logo-icon-16.png">
+                <ng-template #datagit>
+                    <div class="desktop">
+                        <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                            [space]="-7" [animation]="true" [title]="'Github'" [animationDuration]="300"
+                            [subtitle]="'70%'"></circle-progress>
+                    </div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="70" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                            [space]="-5" [animation]="true" [title]="'Github'" [titleFontSize]="13"
+                            [subtitleFontSize]="11" [animationDuration]="300" [subtitle]="'70%'"></circle-progress>
+                    </div>
                 </ng-template>
-        </div></div>
+            </div>
+        </div>
+        <div class="child-6-6-3">
+            <div class="img" (mouseover)="algo = false" (mouseout)="algo = true">
+                <img class="animated" animateOnScroll animationName="fadeIn" style="animation-duration: 2s;"
+                    *ngIf="algo else dataalgo"
+                    src="https://repository-images.githubusercontent.com/228680590/a2865300-2f2c-11ea-9e67-839d7c618d69">
+                <ng-template #dataalgo>
+                    <div class="desktop">
+                        <circle-progress [percent]="70" [radius]="38" [outerStrokeWidth]="5" [innerStrokeWidth]="3"
+                            [space]="-7" [animation]="true" [title]="'Algorithm'" [titleFontSize]="15"
+                            [animationDuration]="300" [subtitle]="'70%'"></circle-progress>
+                    </div>
+                    <div class="mobilesmall">
+                        <circle-progress [percent]="70" [radius]="25" [outerStrokeWidth]="3" [innerStrokeWidth]="2"
+                            [space]="-5" [animation]="true" [title]="'Algorithm'" [titleFontSize]="11"
+                            [subtitleFontSize]="11" [animationDuration]="300" [subtitle]="'70%'"></circle-progress>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
         <div class="child-6-6-4"></div>
         <div class="child-6-6-5"></div>
         <div class="child-6-6-6"></div>

@@ -22,9 +22,12 @@ export class SkillComponent implements OnInit {
   figma = true;
   github = true;
   algo   = true;
+  radi = "38";
+ 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
