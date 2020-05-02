@@ -5,35 +5,35 @@
     </div>
     <div class="child-2">
         <div class="child-2-1 2-1-1 animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInLeft" (mouseover)="lib = false" (mouseout) = "lib = true">
-            <img  *ngIf="lib else datalib" [defaultImage]="default" [lazyLoad]="images.library" [useSrcset]="true">
+            <img alt="image" *ngIf="lib else datalib" [defaultImage]="default" [lazyLoad]="images.library" [useSrcset]="true">
             <ng-template #datalib>
                 <p>e-Library</p>
                 <button (click)="popupFn($event)" id="1">View More</button>
         </ng-template>
         </div>
         <div class="child-2-1 2-1-2 animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInLeft"  (mouseover)="express = false" (mouseout) = "express = true">
-            <img *ngIf="express else dataexp"  [defaultImage]="default" [lazyLoad]="images.express" [useSrcset]="true">
+            <img alt="image"*ngIf="express else dataexp"  [defaultImage]="default" [lazyLoad]="images.express" [useSrcset]="true">
             <ng-template #dataexp>
                 <p>Expess</p>
                 <button (click)="popupFn($event)" id="2">View More</button>
         </ng-template>
         </div>
         <div class="child-2-1 2-1-3 animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeIn" (mouseover)="oshop = false" (mouseout) = "oshop = true">
-            <img  *ngIf="oshop else data"  [defaultImage]="default" [lazyLoad]="images.oshop" [useSrcset]="true">
+            <img alt="image" *ngIf="oshop else data"  [defaultImage]="default" [lazyLoad]="images.oshop" [useSrcset]="true">
             <ng-template #data>
                     <p>Oshop</p>
                     <button (click)="popupFn($event)" id="3">View More</button>
             </ng-template>
         </div>
         <div class="child-2-1 2-1-4 animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInRight" (mouseover)="readit = false" (mouseout) = "readit = true">
-            <img *ngIf="readit else dataread"  [defaultImage]="default" [lazyLoad]="images.readit" [useSrcset]="true">
+            <img alt="image"*ngIf="readit else dataread"  [defaultImage]="default" [lazyLoad]="images.readit" [useSrcset]="true">
             <ng-template #dataread>
                 <p>ReadIt</p>
                 <button (click)="popupFn($event)" id="4">View More</button>
         </ng-template>
         </div>
         <div class="child-2-1 child-2-1-5 animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInRight" (mouseover)="tictac = false" (mouseout) = "tictac = true">
-            <img *ngIf="tictac else datatic"  [defaultImage]="default" [lazyLoad]="images.ticTac" [useSrcset]="true">
+            <img alt="image"*ngIf="tictac else datatic"  [defaultImage]="default" [lazyLoad]="images.ticTac" [useSrcset]="true">
             <ng-template #datatic>
                 <p>Tic Tac Toe</p>
                 <button (click)="popupFn($event)" id="5">View More</button>
@@ -42,28 +42,28 @@
     </div>
     <div class="child-3">
         <div class="child-2-1 3-1-1 animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInLeft" (mouseover)="list = false" (mouseout) = "list = true">
-            <img *ngIf="list else datalist"  [defaultImage]="default" [lazyLoad]="images.list" [useSrcset]="true">
+            <img alt="image"*ngIf="list else datalist"  [defaultImage]="default" [lazyLoad]="images.list" [useSrcset]="true">
             <ng-template #datalist>
                 <p>List</p>
                 <button (click)="popupFn($event)" id="6">View More</button>
         </ng-template>
         </div>
         <div class="child-2-1  3-1-2 animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInLeft" (mouseover)="clone = false" (mouseout) = "clone = true">
-            <img *ngIf="clone else dataclone" [defaultImage]="default" [lazyLoad]="images.clone" [useSrcset]="true">
+            <img alt="image"*ngIf="clone else dataclone" [defaultImage]="default" [lazyLoad]="images.clone" [useSrcset]="true">
             <ng-template #dataclone>
                 <p>Clone</p>
                 <button (click)="popupFn($event)" id="7">View More</button>
         </ng-template>
         </div>
         <div class="child-2-1  3-1-3 animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeIn" (mouseover)="logo = false" (mouseout) = "logo = true">
-            <img *ngIf="logo else datalogo"  [defaultImage]="default" [lazyLoad]="images.logo" [useSrcset]="true">
+            <img alt="image"*ngIf="logo else datalogo"  [defaultImage]="default" [lazyLoad]="images.logo" [useSrcset]="true">
             <ng-template #datalogo>
                 <p>Logo</p>
                 <button (click)="popupFn($event)" id="8">View More</button>
         </ng-template>
         </div>
         <div class="child-2-1  child-3-1-4 animated delay-1s" style="animation-duration:2s" animateOnScroll animationName="fadeInRight" (mouseover)="tictac = false" (mouseout) = "tictac = true">
-            <img *ngIf="tictac else datatic"  [defaultImage]="default" [lazyLoad]="images.ticTac" [useSrcset]="true">
+            <img alt="image"*ngIf="tictac else datatic"  [defaultImage]="default" [lazyLoad]="images.ticTac" [useSrcset]="true">
             <ng-template #datatic>
                 <p>Tic Tac Toe</p>
                 <button (click)="popupFn($event)" id="5">View More</button>
@@ -76,9 +76,9 @@
     <div class="else">
      
         <div class="else-1"></div>
-        <div class="else-2" (click)="popup = false"><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-18e5a.appspot.com/o/svg%2Ftimes-solid.svg?alt=media&token=886f5f4f-19a7-47fe-8382-d2a220723d01">
+        <div class="else-2" (click)="popup = false"><img alt="image"src="https://firebasestorage.googleapis.com/v0/b/portfolio-18e5a.appspot.com/o/svg%2Ftimes-solid.svg?alt=media&token=886f5f4f-19a7-47fe-8382-d2a220723d01">
         </div>
-        <div class="else-3">  <img style="margin: 2% 5%;" src="{{info.image}}"></div>
+        <div class="else-3">  <img alt="image"style="margin: 2% 5%;" src="{{info.image}}"></div>
         <div class="else-4">{{info.title}}</div>
         <div class="else-5">{{info.date}}</div>
         <div class="else-6"><span style="color: #6d6d6d;">Tech - </span>{{info.tech}}</div>
