@@ -11,6 +11,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ContactComponent } from './contact/contact.component';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { LazyLoadImageModule } from 'ng-lazyload-image';  
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    LazyLoadImageModule,
     AnimateOnScrollModule.forRoot(),
     NgCircleProgressModule.forRoot({
       radius: 60,

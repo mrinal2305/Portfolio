@@ -5,7 +5,7 @@
         <div class="child-1-2">
             <div class="child-1-2-1" (mouseover)="overmongo()" (mouseout)="outmongo()" [ngStyle]="mongo?high:low">
                 <div class="child-1-2-1-1" >
-                    <img src="./../../assets/certi/university-mongodb-com-1024x768desktop-b4b4cf.jpg"> 
+                    <img [defaultImage]="default" [lazyLoad]="images.mongo" [useSrcset]="true"> 
                 </div>
                 <div class="child-1-2-1-2">
                     <div class="child-1-2-1-2-1">MongoDB Basic
@@ -28,7 +28,7 @@
 
             <div  class="child-1-2-1" (mouseover)="overintern()"  (mouseout)="outintern()" [ngStyle]="intern?high:low" id="2">
                 <div class="child-1-2-1-1">
-                    <img src="./../../assets/certi/Bertelsmen.jpg">                
+                    <img [defaultImage]="default" [lazyLoad]="images.udacity" [useSrcset]="true">               
                 </div>
                 <div class="child-1-2-1-2">
                     <div class="child-1-2-1-2-1">Deep Learning
@@ -51,7 +51,7 @@
             
             <div class="child-1-2-1" (mouseover)="overmarket()" (mouseout)="outmarket()" [ngStyle]="market?high:low" id="3">
                 <div class="child-1-2-1-1">
-                    <img src="./../../assets/certi/download.png">
+                    <img [defaultImage]="default" [lazyLoad]="images.intern" [useSrcset]="true">
                 </div>
                 <div class="child-1-2-1-2">
                     <div class="child-1-2-1-2-1">Digital Marketing
