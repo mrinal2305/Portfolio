@@ -112,7 +112,7 @@ export class ProjectComponent implements OnInit {
     {
       title: "Logo",
       date: "Apr 20",
-      tech: "React",
+      tech: "Figma",
       detail: "Logo made on figma.",
       github: "https://github.com/mrinal2305/Logo-and-CV/blob/master/Logo_sample.png",
       website: "https://dribbble.com/shots/6971059-Logo",
